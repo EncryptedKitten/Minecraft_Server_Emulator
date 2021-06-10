@@ -1,0 +1,22 @@
+{
+	"navbar": {
+		"MCSE Admin Center": "/admin",
+		"Accounts": {
+			"Create": "/admin/accounts/create",
+			"Delete": "/admin/accounts/delete"
+		},
+		"Blocked Servers": {
+			"Add": "/admin/blockedservers/add",
+			"Remove": "/admin/blockedservers/remove",
+			"Import": "/admin/blockedservers/import"
+		},
+		"Realms": {
+			"Create": "/admin/realms/create",
+			"Delete": "/admin/realms/delete"
+		},
+		"Other": {
+			"Generate Sales": "/admin/sales/generate"
+		}
+	},
+	"site": "MCSE Admin Center"
+}

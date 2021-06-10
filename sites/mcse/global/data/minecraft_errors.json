@@ -1,0 +1,88 @@
+{
+	"not_allowed": {
+		"Error": "Method Not Allowed",
+		"Error message": "The method specified in the request is not allowed for the resource identified by the request URI",
+		"Notes": "Something other than a POST request was received.",
+		"HTTP Code": 401
+	},
+	"not_found": {
+		"Error": "Not Found",
+		"Error message": "The server has not found anything matching the request URI",
+		"Notes": "Non-existing endpoint was called.",
+		"HTTP Code": 404
+	},
+	"user_migrated": {
+		"Error": "ForbiddenOperationException",
+		"Cause": "UserMigratedException",
+		"Error message": "Invalid credentials. Account migrated, use email as username.",
+		"HTTP Code": 401
+	},
+	"invalid_credentials": {
+		"Error": "ForbiddenOperationException",
+		"Error message": "Invalid credentials. Invalid username or password.",
+		"HTTP Code": 401
+	},
+	"login_ratelimit": {
+		"Error": "ForbiddenOperationException",
+		"Error message": "Invalid credentials.",
+		"Notes": "Too many login attempts with this username recently (see /authenticate). Note that username and password may still be valid!",
+		"HTTP Code": 429
+	},
+	"token_invalid": {
+		"Error": "ForbiddenOperationException",
+		"Error message": "Invalid token.",
+		"Notes": "accessToken was invalid.",
+		"HTTP Code": 401
+	},
+	"token_revoked": {
+		"Error": "ForbiddenOperationException",
+		"Error message": "Token does not exist.",
+		"Notes": "accessToken was used in another session that was issued AFTER this session.",
+		"HTTP Code": 401
+	},
+	"access_token_assigned": {
+		"Error": "IllegalArgumentException",
+		"Error message": "Access token already has a profile assigned.",
+		"Notes": "Selecting profiles isn't implemented yet.",
+		"HTTP Code": 400
+	},
+	"null_credentials": {
+		"Error": "IllegalArgumentException",
+		"Error message": "credentials is null",
+		"Notes": "Username/password was not submitted.",
+		"HTTP Code": 400
+	},
+	"invalid_salt": {
+		"Error": "IllegalArgumentException",
+		"Error message": "Invalid salt version",
+		"Notes": "???",
+		"HTTP Code": 500
+	},
+	"wrong_content_type": {
+		"Error": "Unsupported Media Type",
+		"Error message": "The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method",
+		"Notes": "Data was not submitted as application/json",
+		"HTTP Code": 400
+	},
+	"bad_timestamp": {
+		"Error": "IllegalArgumentException",
+		"Error message": "Invalid timestamp.",
+		"HTTP Code": 400
+	},
+	"null_name": {
+		"Error": "BadRequestException",
+		"Error message": "null is invalid",
+		"HTTP Code": 400
+	},
+	"bad_security_answer":
+	{
+		"Error": "ForbiddenOperationException",
+		"Error message": "At least one answer was incorrect",
+		"HTTP Code": 401
+	},
+	"ip_not_secured": {
+		"Error": "ForbiddenOperationException",
+		"Error message": "Current IP is not secured",
+		"HTTP Code": 401
+	}
+}

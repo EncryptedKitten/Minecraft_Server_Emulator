@@ -1,0 +1,33 @@
+
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "minecraft.net" {
+	type master;
+	file "/etc/bind/zones/db.minecraft.net";
+};
+
+zone "mojang.com" {
+	type master;
+	file "/etc/bind/zones/db.mojang.com";
+};
+
+zone "minecraftservices.com" {
+	type master;
+	file "/etc/bind/zones/db.minecraftservices.com";
+};
+
+zone "mojang.zone" {
+	type master;
+	file "/etc/bind/zones/db.mojang.zone";
+};
+
+zone "multimc.org" {
+	type master;
+	file "/etc/bind/zones/db.multimc.org";
+};
